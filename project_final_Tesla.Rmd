@@ -1,0 +1,584 @@
+---
+title: "_**Gender Equality**_"
+#author: "Yusuf TEKER, İbrahim ŞAHİN, Erdi AKYUZ"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](https://static.businessworld.in/article/article_extra_large_image/1496592215_UMlqQm_Gender-Equality.jpg)
+
+_**Tesla**_
+
+- _**090150345 Erdi AKYÜZ**_
+- _**090170302 İbrahim ŞAHİN**_
+- _**090170350 Yusuf TEKER**_
+
+### _**Project Description**_
+
+_Gender equality occurs when people of all genders have the same rights, responsibilities and opportunities. Women, men, transgender people, diverse genders, children and families are all affected by gender inequality. It affects people of all ages and backgrounds._
+
+### _**Project goal & social problem addressed**_
+
+_**TARGET 1: End discrimination against women and girls**_
+
+_End all forms of discrimination against all females everywhere.Whether or not legal frameworks are in place to promote, enforce and monitor equality and non-discrimination on the basis of sex. This means the indicator works towards the legal frameworks which can be applied to promote and enforce non-discrimination on the basis of sex across various measures including hiring, equal pay, marital rape and property rights, among others. Discrimination against women (or sexism) can be measured with a range of indicators such as early marriage, gender-based violence and women's property rights. Child marriage has declined over the past decades yet there is no region that is currently on track to eliminate the practice.If current trends continue, between 2017 and 2030, 150 million girls will be married before they turn 18. Though child marriages are four times higher among the poorest than the wealthiest in the world, most countries need to accelerate progress among both groups in  eliminate child marriage by 2030. Cultural belief of child marriage is the foundation in many cases of child marriage that need to be changed. Child marriage is directly related with maternal mortality and pregnancy related complications. A record of 143 countries guaranteed equality between men and women in their constitutions as of 2014. However, another 52 had not taken this step. In many nations, gender discrimination is still woven into the fabric of legal systems and social norms._
+
+_**TARGET 2: End all violence against and exploitation of women and girls**_
+
+_Eliminate all forms of violence against all females in the public and private spheres including trafficking, sexual and other types of exploitation._
+_-Proportion of ever-partnered women and girls aged 15 years and older subjected to physical, sexual or psychological violence by a current or former intimate partner in the previous 12 months, by form of violence and by age._
+_-Proportion of women and girls aged 15 years and older subjected to sexual violence by persons other than an intimate partner in the previous 12 months, by age and place of occurrence._
+_The rate of constant intentional abuse against females is a widespread form of human rights offense worldwide. Globally, around 7% of women have been sexually abused by someone other than an intimate partner. Another concern is that many of the sex abuse cases are unreported and so data are sub optimal in many countries related to sexual violence._
+
+_**TARGET 3: Eliminate forced marriages and genital mutilation**_
+
+_Eliminate all harmful practices, such as child, early and forced marriage and female genital mutilation evidence shows that there is no health benefit in the case of female genital mutilation Eliminating harmful practices is a way of ensuring that girls are able to live their live full potential lives without any harm. Reducing these risk allows for girls pursue their education, own their bodily autonomy and eventually become productive members of the social, economic and political processes.Educating women has a direct proportional relation with the development of the community._
+_-Proportion of women aged 20–24 years who were married or in a union before age 15 and before age 18_
+_-Proportion of girls and women aged 15–49 years who have undergone female genital mutilation  or cutting In 2019, one in five young women 20 to 24 years of age throughout the world was married in childhood, down from one in four in 2004 and with the highest figure in sub-Saharan Africa, with more than one in three young women. At least 200 million girls and women have been subjected to female genital mutilation, according to recent data from the 31 countries where the practice is concentrated. The harmful practice is becoming less common, but progress is not fast enough to meet the global target of its elimination by 2030._
+
+_**TARGET 4: Value unpaid care and promote shared domestic responsibilities**_
+
+_Recognise and value unpaid care and domestic work through the provision of public services, infrastructure and social protection policies and the promotion of shared responsibility within the household and the family as nationally appropriate_
+_-Proportion of time spent on unpaid domestic and care work, by sex, age and location Unpaid care and domestic work includes cooking and cleaning, fetching water and firewood or taking care of children and the elderly. Women carry out at least two and a half times more unpaid household and care work than men. As a result, women have less time to engage in paid labor, work longer hours, combining paid and unpaid labor. Women's unpaid work subsidizes the cost of care that sustains families, supports economies and often fills in for the lack of social services. Yet, it is rarely recognized as "work". Taking cue from countries like Australia, Italy, Fiji, policies should be put in place to promote equal distribution of paid and unpaid work in households to reduce these gender gaps._
+
+_**TARGET 5: Ensure full participation in leadership and decision-making**_
+
+_Ensure women's full and effective participation and equal opportunities for leadership at all levels of decision-making in political, economic and public life. Advancing global norms and national practices to further women's leadership in politics and public institutions is important for gender equality._
+_-Proportion of seats held by women in national parliaments and  local government_
+_-Proportion of women in managerial positions_
+_As at 1 January 2020, representation by women in single or lower houses of national parliament reached 25 per cent, up slightly from 22 per cent in 2015. Women have better access to decision-making positions at the local level, holding 36 per cent of elected seats in local deliberative bodies, based on data from 133 countries and areas. In 2019, 28 per cent of managerial positions in the world were occupied by women, a small increase from 25 per cent in 2000, while women represented 39 per cent of the world's workers and half of the world's working-age population._
+
+_**TARGET 6: Universal access to reproductive rights and health**_
+
+_Ensuring universal access to sexual and reproductive health and reproductive rights as agreed in accordance with the Program-me of Action of the International Conference on Population and Development and the Beijing Platform for Action and the outcome documents of their review conferences._
+_-Proportion of women aged 15–49 years who make their own informed decisions regarding sexual relations, contraceptive use and reproductive health care_
+_Number of countries with laws and regulations that guarantee full and equal access to women and men aged 15 years and older to sexual and reproductive health care, information and education Based on data from 57 countries for the period 2007–2018, only 55 per cent of married or in-union women 15 to 49 years of age made their own decisions regarding sexual and reproductive health and rights, ranging from less than 40 per cent in Central and Western Africa to nearly 80 per cent in some countries in Europe, South- Eastern Asia and Latin America and the Caribbean._
+
+#### _**Project data & access to data**_
+
+![](img\cs.jpeg)
+
+_The number and ratio of the degrees obtained by women from  computer science between 1995 to 2018_
+
+[**Computer Science Degree 1**](https://www.nsf.gov/statistics/2017/nsf17310/digest/fod-women/computer-sciences.cfm)
+
+[**Computer Science Degree 2**](https://www.rasmussen.edu/degrees/technology/blog/women-in-computer-science-assumptions-to-avoid/)
+
+![](img\mas.jpeg)
+
+_The number and ratio of the degrees obtained by women from  mathematics and statistics between 1995 to 2014_
+
+[**Math and Statistic Degree**](https://www.nsf.gov/statistics/2017/nsf17310/digest/fod-women/mathematics-and-statistics.cfm)
+
+![](img\irbelbmaw.jpeg)
+
+_Comparison of men and women's earnings according to the level of education in different countries in 2018_
+
+[**Income Ratio By Education Level Between Men and Women 2018**](https://stats.oecd.org/index.aspx?queryid=93157)
+
+![](img\ur.jpeg)
+
+_2019 data of unemployment rates of men and women in different countries_
+
+[**Unemployed Ratio of Women and Man (2019)**](https://stats.oecd.org/index.aspx?queryid=54743)
+
+![](img\i.jpeg)
+
+_Average income of different sexes between 2013-2015_
+
+[**Income amounts by gender (2013 - 2015)**](https://www.ncbi.nlm.nih.gov/books/NBK566083/)
+
+![](img\grite.jpeg)
+
+_2018 data of ratio of women and men graduating from tertiary education_
+
+[**Graduation rates in tertiary education 2018**](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Tertiary_education_statistics)
+
+![](img\rab1.png)
+
+_2018 data of running a business of men and women in different countries_
+
+[**Running a business**](https://stats.oecd.org/Index.aspx?QueryId=76380)
+
+![](img\rab2.png)
+
+_2019 data of running a business of men and women in different countries_
+
+[**Running a business**](https://stats.oecd.org/Index.aspx?QueryId=76380)
+
+![](img\leat.png)
+
+_2019 data of life expectancy at birth of men and women in different countries_
+
+[**Life expectancy at birth**](https://stats.oecd.org/Index.aspx?QueryId=30114)
+
+![](img\leat1.png)
+
+_2019 data of life expectancy at birth of men, total and women in different countries_
+
+[**Life expectancy at birth**](https://stats.oecd.org/Index.aspx?QueryId=30114)
+
+![](img\sr.png)
+
+_2018 data of suicide rates per 100 000 persons of males and females in different regions_
+
+[**Suicide rates**](https://data.oecd.org/healthstat/suicide-rates.htm#indicator-chart)
+
+![](img\ditf.jpeg)
+
+_Set of data separated by location in discrimination in the family 2019_
+
+[**Discrimination in the Family**](https://data.oecd.org/inequality/discriminatory-family-code.htm)
+
+![](img\vaw.jpeg)
+
+_Group of data separated by location in violence against women in 2019_
+
+[**Violence against Women**](https://data.oecd.org/inequality/violence-against-women.htm)
+
+![](img\win.jpeg)
+
+_Data group separated by location in women in politics in 2017_
+
+[**Women in Politics**](https://data.oecd.org/inequality/women-in-politics.htm)
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+#install.packages("ploty")
+#install.packages("plotrix")
+library(dplyr)
+library(tidyverse)
+library(readxl)
+earning <- read_excel("data/EAG_EARNINGS.xlsx",col_names=FALSE)
+colnames(earning)<- c("Country","Below upper secondary education","Tertiary education","Upper secondary or post-secondary non-tertiary education","All levels of education")
+
+
+############# FIRST GRAPH 
+p1 <- earning[c(9:11,15:16,28:34),] %>%
+  pivot_longer(cols=2:5 , names_to = "Level", values_to = "Earn")%>%
+  group_by(Country, Level) %>%
+  ggplot(aes(x=reorder(Country,-Earn), y = Earn , fill=Level))+
+  geom_bar(width = 0.7,stat="identity", position="dodge") +
+   theme_minimal() +
+    theme(axis.text.x = element_text(angle = 60,vjust = 1, hjust=1)) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+  theme(legend.position="top")+
+  theme(legend.text=ggplot2::element_text(size=10),
+                   legend.box.margin = margin(2, 2, 2, 2),
+                   legend.title=ggplot2::element_text(size=1.5*10,face="bold"),
+                   legend.position="bottom",
+                   legend.key.size = grid::unit(10/50, "inch"),
+                   legend.key.width = grid::unit(10/50, "inch"))+
+  guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  labs(size = 5,title="Earning Ratio Relatively 2018 (Earning of Man = 100)", 
+       y="", x="") +
+  scale_y_continuous(breaks=c(0,25,50,75,100,125))+
+  geom_hline(yintercept=100, linetype="solid", color = "red") +
+  geom_text(size=3,x=10, y= 95, label="Women earn less than man",color = "red")+
+  geom_text(size=3,x=10, y= 105, label="Women earn more than man",color = "red")
+
+p1
+
+############# SECOND GRAPH WITH SAME DATA
+
+data <- earning[c(9:11,15:16,28:34),] %>%
+  pivot_longer(cols=2:5 , names_to = "Level", values_to = "Earn")
+
+data$Level <- as.factor(data$Level)
+
+p12<-ggplot(data, aes(x=reorder(Country,-Earn), y=Earn)) + 
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"),axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),plot.title = element_text(vjust=5))+
+  geom_point(aes(col=Level, size=Earn))+
+  labs(size = "Earning Ratio (%)" ,title="
+Income Ratio By Education Level Between Men and Women 2018", 
+       y="% Ratio", x="")   + labs(color='Level of Education')+
+  scale_y_continuous(limits = c(70, 101)) +
+  geom_hline(yintercept=100, linetype="solid", color = "black")+
+  geom_text(size=3,x=10, y= 99, label="Women who earn less than man",color = "red")+
+  geom_text(size=3,x=10, y= 101, label="Women who earn more than man",color = "red")
+p12
+
+```   
+
+_It is evident at all levels of education that compared to Men, women are more likely to work in low-wage occupations and are less likely to advance in their careers._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+library(plotly)
+UnemployementRate <- read_excel("data/UnemployementRate.xlsx") 
+
+for (i in seq( 1, length( UnemployementRate$Country)/2 )) {
+UnemployementRate$Country[i*2] <- UnemployementRate$Country[ (i*2-1)]  
+}
+
+UnemployementRate <- UnemployementRate%>%
+  select("Country", "Sex", "2019") 
+
+# p2 <- UnemployementRate%>%
+#   group_by(Country) %>%
+#   ggplot(aes(x=reorder(Country, -UnemployementRate$`2019`), y = UnemployementRate$`2019` , fill=Sex))+
+#   geom_bar(width = 0.5,stat="identity", position="dodge") +
+#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+#     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+# panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+#   labs(title="Unemployed Ratio of Women and Man(2019)", 
+#        y="Unemployment (%)", x="", 
+#        caption="Source: OECD") 
+# p2
+##################################################
+
+UnemployementRate$Country <- reorder(UnemployementRate$Country, -UnemployementRate$`2019`)
+
+p22 <- ggplot(UnemployementRate, aes(x = Country,y=`2019`, fill = Sex)) +
+      geom_bar(position="identity", stat="identity",alpha = 0.6,color = "black")+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+  labs(title="Unemployed Ratio of Women and Man (2019)", 
+       y="Unemployment (%)", x="", 
+       caption="Source: OECD") +
+  scale_fill_manual("Sex", values = c("Men" = "red", "Women" = "grey"))
+
+fig1 <- ggplotly(p22)
+fig1
+
+```
+
+_The unemployment rate for men usually below that for women._
+
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+# GENDERS EARNING GAP 
+
+data <- data.frame(
+  Income = c(38.803, 39.903, 47.026,49.766, 57.033, 59.618),
+  group = c("Bisexual women", "Heterosexual Women","Lesbian women","Bisexual men", "Heterosexual men","Gay men"))
+
+g1 <- data %>%mutate(group = fct_reorder(group, Income)) %>%
+ggplot (aes(x=Income, y=group)) +
+    geom_bar(stat="identity", fill=c("#e40303","#ff8c00","#ffed00","#008026","#004dff","#750787"), alpha=.7, width=.7)+
+   scale_x_reverse() +
+    theme_bw() +
+  labs(title="Income amounts by gender (2013 - 2015)", 
+       y="", x="Annual average gain (thousands)", 
+       caption="Source: National Health Interview Survey ")
+
+fig2 <- ggplotly(g1)
+fig2
+# such simple comparisons of average earnings may be misleading, as differences in the characteristics of groups, such as a higher average education level or different ages, confound observed earnings differences across groups.
+
+ 
+
+```
+_Although the income status among individuals of the male gender  from country to country, it is a fact that in most countries, male individuals have more income than female individuals._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+
+library(ggplot2)
+library(ggpubr)
+MathAndStatisticDegree <- read_excel("data/MathAndStatisticDegree.xlsx")
+numOfMaSD=MathAndStatisticDegree %>% slice(1:3)
+perOfMaSD=MathAndStatisticDegree %>% slice(6:8)
+ComputerScience <- read_excel("data/ComputerScience.xlsx")
+numOfComSci=ComputerScience %>% slice(1:4)
+perOfComSci=ComputerScience %>% slice(7:10)
+
+
+perLong <-  gather(perOfMaSD,degree,ratio,"Bachelor's":Doctorate,factor_key = TRUE )
+perLong <- perLong %>% mutate(across(ratio, as.integer))
+
+numLong <-  gather(numOfMaSD,degree,number,"Bachelor's":Doctorate,factor_key = TRUE )
+numLong <- numLong %>% mutate(across(number, as.integer))
+
+numLong <-  numLong %>% mutate(number = c(numLong$number)/1000)
+
+
+
+perLong2 <-  gather(perOfComSci,degree,ratio,"Bachelor's":Doctorate,factor_key = TRUE )%>% 
+  mutate(across(ratio, as.integer))
+
+numLong2 <-  gather(numOfComSci,degree,number,"Bachelor's":Doctorate,factor_key = TRUE )%>% 
+  mutate(across(number, as.integer))
+  
+numLong2 <-  numLong2 %>% mutate(number = c(numLong2$number)/1000)
+
+p31 <- ggplot(perLong, aes(Year,ratio,group =degree ,colour=degree))+
+  geom_line(size=1)+
+  geom_hline(yintercept=50, linetype="solid", color = "red") +
+  geom_point(size=2)+
+  ylim(10,55)+ theme_bw()+ theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  geom_text(x=2, y= 55, label="%50",color = "red")+
+  labs(title =" Math and Statistic Degree",x= "Year", y = "Percent Women") 
+n31 <- ggplot(numLong, aes(Year,number,group =degree ,colour=degree))+
+  geom_line(size=1)+
+  geom_point(size=2) +   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  labs(x= "Year", y = "Number of Women (thousands)") 
+
+
+
+
+
+n32 <- ggplot(numLong2, aes(Year,number,group =degree ,colour=degree))+
+  geom_line(size=1)+
+  geom_point(size=2)+
+   theme_bw()+ theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  labs(x= "Year", y = "Number of Women (thousands)") 
+
+p32 <- ggplot(perLong2, aes(Year,ratio,group =degree ,colour=degree))+
+  geom_line(size=1) +
+  geom_hline(yintercept=50, linetype="solid", color = "red") +
+  geom_point(size=2) +
+  ylim(10,55) +
+  theme_bw() +  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  geom_text(x=2, y= 55, label="%50",color = "red")+
+  labs(title =" Computer Science Degree",x= "Year", y = "Percent Women")
+
+
+
+  ggarrange(p31,p32, n31,n32, ncol=2, nrow=2, common.legend = TRUE, legend="bottom")
+
+##########################################################
+
+
+
+
+```
+
+_In 2014, women's representation in mathematics and statistics reached more than 40% at the bachelor's and master's levels but remained below 30% at the doctoral level. At all degree levels the percentage of women in mathematics and statistics is higher than the corresponding percentage of women in engineering and computer sciences. Despite increases in the numbers of women earning degrees in mathematics and statistics since 2004, the proportion of women has declined at the bachelor's and master's levels._
+
+_The number of women in computer sciences has risen at all degree levels between 1995 and 2014. The proportion of women with degrees in computer sciences has increased slightly at the master's and doctoral level but has declined at the bachelor's level. Both the number and proportion of computer sciences bachelor's degrees earned by women has declined between 1995 and 2014. The proportion of women in computer sciences is highest at the master's level._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+
+library(readxl)
+#install.packages("mapdata")
+GraduationRatesTertiary <- read_excel("data/GraduationRatesTertiary.xlsx")
+
+mapdata <- map_data("world")
+mapdata <- left_join(mapdata, GraduationRatesTertiary, by="region")
+mapdata1<-mapdata %>% filter(!is.na(mapdata$females))
+
+
+
+map1<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Female)")+
+  geom_polygon(aes(fill = females), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+map2<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Male)")+
+  geom_polygon(aes(fill = males), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+figure <- ggarrange(map1,map2,  ncol=2, nrow=1, common.legend = TRUE, legend="bottom")
+annotate_figure(figure,
+               top = text_grob("Graduation rates in tertiary education 2018", color = "black", face = "bold", size = 14))
+  
+
+```
+
+_Although the rate of education at tertiary education and above is lower in our country, it is seen that the education level of women across Europe is more than men._
+
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+
+library(readr)
+library(readxl)
+Running_a_business_1 <- read_excel("data/Running_a_business_1.xlsx")
+#View(Running_a_business_1)
+
+Running_a_business_2 <- read_excel("data/Running_a _business_2.xlsx")
+#View(Running_a_business_2)
+
+Life_expectancy_at_birth <- read_excel("data/Life_expectancy_at_birth.xlsx")
+#View(Life_expectancy_at_birth)
+
+```
+
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+library(ggplot2)
+ggplot(Running_a_business_1, aes(x = reorder(LOCATION,Value), y = Value, color = GENDER)) +
+  geom_point(shape = "diamond", size = 2) +
+  theme(axis.ticks.y = element_blank(), axis.ticks.x = element_blank()) +
+  ylim(c(40, 80)) +
+  labs(x = "LOCATION", y = "Value",
+       title = "Running a business",
+       subtitle = "Current Men / Current Women, % of positive answers, 2018 or latest available") +
+  theme(plot.title = element_text(size = 14, face = "bold" ),
+        plot.subtitle = element_text(size = 12, face = "italic" )) +
+  theme(axis.line = element_blank()) +
+  theme(axis.title = element_blank()) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 7)) 
+```
+
+
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+ggplot(Running_a_business_2, aes(x = reorder(LOCATION,Value), y = Value, color = GENDER)) +
+  geom_point(shape = "diamond", size = 2) +
+  theme(axis.ticks.y = element_blank(), axis.ticks.x = element_blank()) +
+  ylim(c(50, 100)) +
+  labs(x = "LOCATION", y = "Value",
+       title = "Running a business",
+       subtitle = "Future outlook, men / Future outlook, women, % of positive answers, 2019 or latest available") +
+  theme(plot.title = element_text(size = 14, face = "bold" ),
+        plot.subtitle = element_text(size = 12, face = "italic" )) +
+  theme(axis.line = element_blank()) +
+  theme(axis.title = element_blank()) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 7)) 
+```
+_The number of women who running a business is higher than the number of men who running a business and after 1 year, an increase is observed in the number of those who running a business._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+ggplot(Life_expectancy_at_birth, aes(x = reorder(LOCATION,Value), y = Value, color = GENDER)) +
+  geom_point(shape = "diamond", size = 2) +
+  theme(axis.ticks.y = element_blank(), axis.ticks.x = element_blank()) +
+  ylim(c(60, 90)) +
+  labs(x = "LOCATION", y = "Value",
+       title = "Life expectancy at birth",
+       subtitle = "Men / Total / Women, Years, 2019 or latest available") +
+  theme(plot.title = element_text(size = 14, face = "bold" ),
+        plot.subtitle = element_text(size = 12, face = "italic" )) +
+  theme(axis.line = element_blank()) +
+  theme(axis.title = element_blank()) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 7))
+```
+
+_Life expectancy at birth is defined as how long, on average, a newborn can expect to live, if current death rates do not change. However, the actual age-specific death rate of any particular birth cohort cannot be known in advance. If rates are falling, actual life spans will be higher than life expectancy calculated using current death rates. Life expectancy at birth is one of the most frequently used health status indicators. Gains in life expectancy at birth can be attributed to a number of factors, including rising living standards, improved lifestyle and better education, as well as greater access to quality health services. This indicator is presented as a total and per gender and is measured in years.The life expectancy at birth is longer for women than for men. Life expectancy at birth is highest in Japan and lowest in South Africa._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+#install.packages("mapdata")
+library(tidyverse)
+library(ggplot2)
+library(ggpubr)
+Suicide_rates <- read_excel("data/Suicide_rates.xlsx")
+#View(Suicide_rates)
+
+mapdata <- map_data("world")
+mapdata <- left_join(mapdata, Suicide_rates, by="region")
+mapdata1<-mapdata %>% filter(!is.na(mapdata$females))
+
+
+map1<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Women)")+
+  geom_polygon(aes(fill = females), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+map2<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Men)")+
+  geom_polygon(aes(fill = males), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+figure <- ggarrange(map1,map2,  ncol=2, nrow=1, common.legend = TRUE, legend="bottom")
+annotate_figure(figure,
+               top = text_grob("Suicide rates, Per 100 000 persons, 2018 or latest available ", color = "black", face = "bold", size = 14))
+```
+_Suicide rates are defined as the deaths deliberately initiated and performed by a person in the full knowledge or expectation of its fatal outcome. Caution is required therefore in interpreting variations across countries. This indicator is presented as a total and per gender and is measured in terms of deaths per 100 000 inhabitants (total), per 100 000 men and per 100 000 women. It is seen that female suicide rates are higher than male suicide rates._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+library(readxl)
+discri <- read_excel("data/discri.xlsx")
+#View(discri)
+
+violence <- read_excel("data/violence.xlsx")
+#View(violence)
+
+womeninpolitics <- read_excel("data/womeninpolitics.xlsx")
+#View(womeninpolitics)
+```
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+library(ggplot2)
+#library(ggthemes)
+ggplot(discri,aes(x = Value, y =reorder(LOCATION,Value) , size=Value)) +
+geom_smooth(method = "lm",
+            formula = x ~ log(y),
+            se = FALSE,
+            color = "red",fill ="red") +
+geom_point(color = "red", size = 3, shape = 2) +
+theme(text = element_text(color = "gray10"),
+axis.text = element_text(face = "italic"),
+axis.title.x = element_text(vjust = -1),
+axis.title.y = element_text(vjust = 2),
+axis.ticks.y = element_blank(),
+axis.line = element_line(color = "gray40", size = 0.5),
+axis.line.y = element_line(color = "gray40", size = 0.5),
+panel.grid.major = element_line(color = "gray50", size = 0.3),
+panel.grid.major.x = element_blank())+
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"),axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+labs(x="Ratio of Discrimination (%)" , y="Countries",
+  title = "        Discrimination in the Family")+
+  coord_flip()
+```
+_Discrimination within the family is highest in Jordan and lowest in Lithuania.When we examine the data, it seems that domestic discrimination is higher in countries in the African continent.On the other hand, in the Scandinavian countries, separation within the family seems less._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+#library(ggplot2)
+ggplot(violence, aes(x= reorder(LOCATION,-Value),y = Value))+
+geom_col(fill="gray")+
+coord_flip()+
+theme_minimal()+
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+labs(x="Countries" , y="Violance Ratio %",
+     title="                         Violence against Women")
+```
+_As seen in the dataset, violence against women is very high in Afghanistan and the Central African Republic, while violence against women is low in Ireland and Urugua. If we infer from the visual we have, we can infer that countries with low education rates at an early age have a high rate of violence against women. Regretfully, as we can see in the data set on violence against women, Turkey is an above average country. With this sharing, we hope to be able to cause this value to decrease._
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+#library(ggplot2)
+  ggplot(womeninpolitics)+
+     geom_point(mapping = aes(x = Value, y = LOCATION, size = Value),color = "black")+
+     theme_classic()+
+     labs(x="Ratio of Women in Politics" , y="Countries",
+     title="                         Women in Politics")
+```
+_When we analyzed our dataset, women's participation in politics was the highest in Sweden and Ireland, It is the least in African Countries. Since most African countries do not have a parliamentary system, evaluation has been made among the countries with the parliamentary system of European countries. In European countries, participation rates of Lithuanian and Hungarian women in politics are also low. In Turkey, the rate is below the average._
+
+### _**Results and Discussion**_
+
+_As a result, gender equality is the first and most important element of the environment, whether it contributes to the results of improving gender equality and the effects of these results on society are examined. Understandings and feelings about gender and gender issues can often be deeply personal, and approaching these issues can trigger memories and feelings about past or current experiences. Awareness of gender issues has primarily been brought about as a result of the work of the women’s movement and of feminist politics, which includes work on gender equality, challenging the status and roles of women and men in society, and addressing the creation of gendered stereotypes. For this reason, there is a tendency to associate gender with women and women’s issues alone. However, it is important to note that everyone has a gender identity, and discussing gender is not only about discussing women’s issues._
+
+### _**Conclusion**_
+
+_The Gender Data  includes selected indicators shedding light on gender inequalities in education, employment, entrepreneurship, governance, health and development, showing how far we are from achieving gender equality and where actions is most needed. The idea of the project was to raise awareness of gender inequality, which is very common in our country, and to observe where the world is in the gender equality part, to make inferences. By sharing the project on platforms open to access to social media, we share our observations and inferences to people who are dealing with data science or think about dealing with it, to raise awareness of the importance of gender equality in people and to strive as a social responsibility project on behalf of our country._
+
+### _**References**_
+
+- https://www.oecd.org
+- https://www.nsf.gov
+- https://ec.europa.eu
+- https://www.ncbi.nlm.nih.gov
+- https://www.rasmussen.edu
+
+
+

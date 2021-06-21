@@ -1,0 +1,671 @@
+---
+title: "Gender Equality"
+#author: "Yusuf TEKER, İbrahim ŞAHİN, Erdi AKYUZ"
+institute: "Department of Mathematics<br/>Istanbul Technical University"
+date: "`r format(Sys.Date(), '%B %e, %Y')`"
+output:
+  xaringan::moon_reader:
+    css: ["default", "xaringan-themer.css"] 
+    self_contained: false # if true, fonts will be stored locally
+    nature:
+      titleSlideClass: ["left", "middle", "my-title"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+---
+
+
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_light(
+  base_color = "#042856", 
+  header_color = "#7cacd4",
+  title_slide_text_color = "#7cacd4",
+  link_color = "#0000FF",
+  text_color = "#000000",
+  background_color = "#FFFFFF",
+  header_h1_font_size ="2.00rem"
+  )
+```
+
+```{r xaringan-scribble, echo=FALSE}
+xaringanExtra::use_scribble() #activate for the pencil
+xaringanExtra::use_xaringan_extra(c("tile_view", "animate_css", "tachyons"))
+```
+
+```{r, echo=FALSE, purl=FALSE, message = FALSE}
+knitr::opts_chunk$set(comment = "#>", purl = FALSE, fig.showtext = TRUE, out.width="40%", retina = 2)
+```
+
+class: center, middle
+![Gender Equality](img/Gender-Equality.jpg)
+# **Gender Equality**
+
+---
+class: middle
+# **Tesla**
+
+- 090150345 Erdi AKYÜZ
+- 090170302 İbrahim ŞAHİN
+- 090170350 Yusuf TEKER
+
+---
+class: center, middle
+![intro](img/intro.jpeg)
+- Gender equality is when people of all genders have equal rights, responsibilities and opportunities
+
+---
+class: center, middle
+![Goal](img/goal.png)
+---
+class: middle
+## **Project Goal & Societal Benefits**
+- End discrimination against women and girls
+
+- End all violence against and exploitation of women and girls
+
+- Eliminate forced marriages and genital mutilation
+
+- Value unpaid care and promote shared domestic responsibilities  
+
+- Ensure full participation in leadership and decision-making
+
+- Universal access to reproductive rights and health
+
+---
+class: center, middle
+## - **Employment**
+
+## - **Education**
+
+## - **Entrepreneurship**
+
+## - **Health**  
+
+## - **Development**
+
+## - **Governance**
+
+---
+
+class: center, middle
+![](img\R1.png)
+
+---
+
+class: center, middle
+
+### **Introduction of data & Actions taken (data preparation & visualization, codes etc)**
+  
+---
+
+**_Comparison of men and women's earnings according to the level of education in different countries in 2018_**
+
+![](img\irbelbmaw.jpeg) 
+
+[Income Ratio By Education Level Between Men and Women 2018](https://stats.oecd.org/index.aspx?queryid=93157) 
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='90%', out.width='60%'}
+
+library(dplyr)
+library(tidyverse)
+library(readxl)
+earning <- read_excel("data/EAG_EARNINGS.xlsx",col_names=FALSE)
+colnames(earning)<- c("Country","Below upper secondary education","Tertiary education","Upper secondary or post-secondary non-tertiary education","All levels of education")
+
+
+#Comparison of men and women's earnings according to the level of education in different countries in 2018
+
+############# FIRST GRAPH 
+p1 <- earning[c(9:11,15:16,28:34),] %>%
+  pivot_longer(cols=2:5 , names_to = "Level", values_to = "Earn")%>%
+  group_by(Country, Level) %>%
+  ggplot(aes(x=reorder(Country,-Earn), y = Earn , fill=Level))+
+  geom_bar(width = 0.7,stat="identity", position="dodge") +
+   theme_minimal() +
+    theme(axis.text.x = element_text(angle = 60,vjust = 1, hjust=1)) +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+  theme(legend.position="top")+
+  theme(legend.text=ggplot2::element_text(size=10),
+                   legend.box.margin = margin(2, 2, 2, 2),
+                   legend.title=ggplot2::element_text(size=1.5*10,face="bold"),
+                   legend.position="bottom",
+                   legend.key.size = grid::unit(10/50, "inch"),
+                   legend.key.width = grid::unit(10/50, "inch"))+
+  guides(fill=guide_legend(nrow=2,byrow=TRUE))+
+  labs(size = 5,title="Earning Ratio Relatively 2018 (Earning of Man = 100)", 
+       y="", x="") +
+  scale_y_continuous(breaks=c(0,25,50,75,100,125)+
+  scale_y_continuous(limits = c(70, 101)) )+
+  geom_hline(yintercept=100, linetype="solid", color = "red") +
+  geom_text(size=3,x=10, y= 95, label="Women earn less than man",color = "red")+
+  geom_text(size=3,x=10, y= 105, label="Women earn more than man",color = "red")
+
+p1
+
+```   
+
+---
+
+**_2019 data of unemployment rates of men and women in different countries_**
+
+![](img\ur.jpeg)
+
+[Unemployed Ratio of Women and Man (2019)](https://stats.oecd.org/index.aspx?queryid=54743)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='100%'}
+
+library(plotly)
+UnemployementRate <- read_excel("data/UnemployementRate.xlsx") 
+
+for (i in seq( 1, length( UnemployementRate$Country)/2 )) {
+UnemployementRate$Country[i*2] <- UnemployementRate$Country[ (i*2-1)]  
+}
+
+UnemployementRate <- UnemployementRate%>%
+  select("Country", "Sex", "2019") 
+
+# p2 <- UnemployementRate%>%
+#   group_by(Country) %>%
+#   ggplot(aes(x=reorder(Country, -UnemployementRate$`2019`), y = UnemployementRate$`2019` , fill=Sex))+
+#   geom_bar(width = 0.5,stat="identity", position="dodge") +
+#   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+#     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+# panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+#   labs(title="Unemployed Ratio of Women and Man(2019)", 
+#        y="Unemployment (%)", x="", 
+#        caption="Source: OECD") 
+# p2
+##################################################
+
+UnemployementRate$Country <- reorder(UnemployementRate$Country, -UnemployementRate$`2019`)
+
+p22 <- ggplot(UnemployementRate, aes(x = Country,y=`2019`, fill = Sex)) +
+      geom_bar(position="identity", stat="identity",alpha = 0.6,color = "black")+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+  labs(title="Unemployed Ratio of Women and Man (2019)", 
+       y="Unemployment (%)", x="", 
+       caption="Source: OECD") +
+  scale_fill_manual("Sex", values = c("Men" = "red", "Women" = "grey"))
+
+fig1 <- ggplotly(p22)
+fig1
+
+```
+---
+
+**_Average income of different sexes between 2013-2015_**
+
+![](img\i.jpeg)
+
+[Income amounts by gender (2013 - 2015)](https://www.ncbi.nlm.nih.gov/books/NBK566083/)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='90%'}
+
+# GENDERS EARNING GAP 
+
+data <- data.frame(
+  Income = c(38.803, 39.903, 47.026,49.766, 57.033, 59.618),
+  group = c("Bisexual women", "Heterosexual Women","Lesbian women","Bisexual men", "Heterosexual men","Gay men"))
+
+g1 <- data %>%mutate(group = fct_reorder(group, Income)) %>%
+ggplot (aes(x=Income, y=group)) +
+    geom_bar(stat="identity", fill=c("#e40303","#ff8c00","#ffed00","#008026","#004dff","#750787"), alpha=.7, width=.7)+
+   scale_x_reverse() +
+    theme_bw() +
+  labs(title="Income amounts by gender (2013 - 2015)", 
+       y="", x="Annual average gain (thousands)", 
+       caption="Source: National Health Interview Survey ")
+
+fig2 <- ggplotly(g1)
+fig2
+
+```
+
+
+---
+
+
+**_The number and ratio of the degrees obtained by women from  computer science between 1995 to 2018_**
+
+![](img\mas.jpeg)
+
+[Computer Science Degree 1](https://www.nsf.gov/statistics/2017/nsf17310/digest/fod-women/computer-sciences.cfm)
+
+[Computer Science Degree 2](https://www.rasmussen.edu/degrees/technology/blog/women-in-computer-science-assumptions-to-avoid/)
+
+---
+
+class: middle, right
+
+![](img\Not_boyfriends_computer.jpg)
+
+---
+
+
+**_The number and ratio of the degrees obtained by women from  mathematics and statistics between 1995 to 2014_**
+
+![](img\irbelbmaw.jpeg)
+
+[Math and Statistic Degree](https://www.nsf.gov/statistics/2017/nsf17310/digest/fod-women/mathematics-and-statistics.cfm)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+
+library(ggplot2)
+library(ggpubr)
+MathAndStatisticDegree <- read_excel("data/MathAndStatisticDegree.xlsx")
+numOfMaSD=MathAndStatisticDegree %>% slice(1:3)
+perOfMaSD=MathAndStatisticDegree %>% slice(6:8)
+ComputerScience <- read_excel("data/ComputerScience.xlsx")
+numOfComSci=ComputerScience %>% slice(1:4)
+perOfComSci=ComputerScience %>% slice(7:10)
+
+
+perLong <-  gather(perOfMaSD,degree,ratio,"Bachelor's":Doctorate,factor_key = TRUE )
+perLong <- perLong %>% mutate(across(ratio, as.integer))
+
+numLong <-  gather(numOfMaSD,degree,number,"Bachelor's":Doctorate,factor_key = TRUE )
+numLong <- numLong %>% mutate(across(number, as.integer))
+
+numLong <-  numLong %>% mutate(number = c(numLong$number)/1000)
+
+
+
+perLong2 <-  gather(perOfComSci,degree,ratio,"Bachelor's":Doctorate,factor_key = TRUE )%>% 
+  mutate(across(ratio, as.integer))
+
+numLong2 <-  gather(numOfComSci,degree,number,"Bachelor's":Doctorate,factor_key = TRUE )%>% 
+  mutate(across(number, as.integer))
+  
+numLong2 <-  numLong2 %>% mutate(number = c(numLong2$number)/1000)
+
+p31 <- ggplot(perLong, aes(Year,ratio,group =degree ,colour=degree))+
+  geom_line(size=1)+
+  geom_hline(yintercept=50, linetype="solid", color = "red") +
+  geom_point(size=2)+
+  ylim(10,55)+ theme_bw()+ theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  geom_text(x=2, y= 55, label="%50",color = "red")+
+  labs(title =" Math and Statistic Degree",x= "Year", y = "Percent Women") 
+n31 <- ggplot(numLong, aes(Year,number,group =degree ,colour=degree))+
+  geom_line(size=1)+
+  geom_point(size=2) +   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  labs(x= "Year", y = "Number of Women (thousands)") 
+
+
+
+
+
+n32 <- ggplot(numLong2, aes(Year,number,group =degree ,colour=degree))+
+  geom_line(size=1)+
+  geom_point(size=2)+
+   theme_bw()+ theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  labs(x= "Year", y = "Number of Women (thousands)") 
+
+p32 <- ggplot(perLong2, aes(Year,ratio,group =degree ,colour=degree))+
+  geom_line(size=1) +
+  geom_hline(yintercept=50, linetype="solid", color = "red") +
+  geom_point(size=2) +
+  ylim(10,55) +
+  theme_bw() +  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"))+
+  geom_text(x=2, y= 55, label="%50",color = "red")+
+  labs(title =" Computer Science Degree",x= "Year", y = "Percent Women")
+
+
+
+  ggarrange(p31,p32, n31,n32, ncol=2, nrow=2, common.legend = TRUE, legend="bottom")
+
+##########################################################
+
+
+```
+
+---
+
+**_2018 data of ratio of women and men graduating from tertiary education_**
+
+![](img\grite.jpeg)
+
+[Graduation rates in tertiary education 2018](https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Tertiary_education_statistics)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+
+library(readxl)
+library(mapdata)
+#install.packages("mapdata")
+library(ggpubr)
+GraduationRatesTertiary <- read_excel("data/GraduationRatesTertiary.xlsx")
+
+mapdata <- map_data("world")
+mapdata <- left_join(mapdata, GraduationRatesTertiary, by="region")
+mapdata1<-mapdata %>% filter(!is.na(mapdata$females))
+
+
+
+map1<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Female)")+
+  geom_polygon(aes(fill = females), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+map2<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Male)")+
+  geom_polygon(aes(fill = males), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+figure <- ggarrange(map1,map2,  ncol=2, nrow=1, common.legend = TRUE, legend="bottom")
+annotate_figure(figure,
+                 top = text_grob("Graduation rates in tertiary education 2018", color = "black", face = "bold", size = 14))
+  
+#https://ec.europa.eu/eurostat/statistics-explained/images/f/f1/Tertiary_education_statistics_ET2020.xlsx
+
+# 2018 data of Ratio of women and men graduating from tertiary education
+
+```
+
+---
+
+**2018 data of running a business of men and women in different countries**
+
+![](img\rab1.png)
+
+[Running a business](https://stats.oecd.org/Index.aspx?QueryId=76380)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE}
+library(readr)
+library(readxl)
+Running_a_business_1 <- read_excel("data/Running_a_business_1.xlsx")
+#View(Running_a_business_1)
+
+Running_a_business_2 <- read_excel("data/Running_a _business_2.xlsx")
+#View(Running_a_business_2)
+
+Life_expectancy_at_birth <- read_excel("data/Life_expectancy_at_birth.xlsx")
+#View(Life_expectancy_at_birth)
+
+```
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+library(ggplot2)
+ggplot(Running_a_business_1, aes(x = reorder(LOCATION,Value), y = Value, color = GENDER)) +
+  geom_point(shape = "diamond", size = 2) +
+  theme(axis.ticks.y = element_blank(), axis.ticks.x = element_blank()) +
+  ylim(c(40, 80)) +
+  labs(x = "LOCATION", y = "Value",
+       title = "Running a business",
+       subtitle = "Current Men / Current Women, % of positive answers, 2018 or latest available") +
+  theme(plot.title = element_text(size = 14, face = "bold" ),
+        plot.subtitle = element_text(size = 12, face = "italic" )) +
+  theme(axis.line = element_blank()) +
+  theme(axis.title = element_blank()) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 7)) 
+
+```
+---
+
+**2019 data of running a business of men and women in different countries**
+
+![](img\rab2.png)
+
+[Running a business](https://stats.oecd.org/Index.aspx?QueryId=76380)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+ggplot(Running_a_business_2, aes(x = reorder(LOCATION,Value), y = Value, color = GENDER)) +
+  geom_point(shape = "diamond", size = 2) +
+  theme(axis.ticks.y = element_blank(), axis.ticks.x = element_blank()) +
+  ylim(c(50, 100)) +
+  labs(x = "LOCATION", y = "Value",
+       title = "Running a business",
+       subtitle = "Future outlook, men / Future outlook, women, % of positive answers, 2019 or latest available") +
+  theme(plot.title = element_text(size = 14, face = "bold" ),
+        plot.subtitle = element_text(size = 12, face = "italic" )) +
+  theme(axis.line = element_blank()) +
+  theme(axis.title = element_blank()) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 7)) 
+```
+
+---
+  
+
+**2019 data of life expectancy at birth of men and women in different countries**
+
+![](img\leat.png)
+
+[Life expectancy at birth](https://stats.oecd.org/Index.aspx?QueryId=30114)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+ggplot(Life_expectancy_at_birth, aes(x = reorder(LOCATION,Value), y = Value, color = GENDER)) +
+  geom_point(shape = "diamond", size = 2) +
+  theme(axis.ticks.y = element_blank(), axis.ticks.x = element_blank()) +
+  ylim(c(60, 90)) +
+  labs(x = "LOCATION", y = "Value",
+       title = "Life expectancy at birth",
+       subtitle = "Men / Total / Women, Years, 2019 or latest available") +
+  theme(plot.title = element_text(size = 14, face = "bold" ),
+        plot.subtitle = element_text(size = 12, face = "italic" )) +
+  theme(axis.line = element_blank()) +
+  theme(axis.title = element_blank()) +
+  theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1, size = 7))
+```
+
+---
+
+**2019 data of life expectancy at birth of men, total and women in different countries**
+
+![](img\leat1.png)
+
+[Life expectancy at birth](https://stats.oecd.org/Index.aspx?QueryId=30114)
+
+---
+
+**2018 data of suicide rates per 100 000 persons of males and females in different regions**
+
+![](img\sr.png)
+
+[Suicide rates](https://data.oecd.org/healthstat/suicide-rates.htm#indicator-chart)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+#install.packages("mapdata")
+library(tidyverse)
+library(ggplot2)
+library(ggpubr)
+Suicide_rates <- read_excel("data/Suicide_rates.xlsx")
+#View(Suicide_rates)
+
+mapdata <- map_data("world")
+mapdata <- left_join(mapdata, Suicide_rates, by="region")
+mapdata1<-mapdata %>% filter(!is.na(mapdata$females))
+
+
+map1<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Women)")+
+  geom_polygon(aes(fill = females), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+map2<-ggplot(mapdata1, aes( x = long, y = lat, group=group)) +
+  ggtitle("     (Men)")+
+  geom_polygon(aes(fill = males), color = "black") + scale_fill_gradient(name = "%", low = "yellow", high =  "red", na.value = "grey50")+
+  theme(axis.text.x = element_blank(),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_blank(),
+        rect = element_blank())
+
+figure <- ggarrange(map1,map2,  ncol=2, nrow=1, common.legend = TRUE, legend="bottom")
+annotate_figure(figure,
+               top = text_grob("Suicide rates, Per 100 000 persons, 2018 or latest available ", color = "black", face = "bold", size = 14))
+```
+---
+
+**Set of data separated by location in discrimination in the family 2019**
+
+![](img\ditf.jpeg)
+
+[Discrimination in the Family](https://data.oecd.org/inequality/discriminatory-family-code.htm)
+
+---
+
+```{r, echo=FALSE}
+library(readxl)
+discri <- read_excel("data/discri.xlsx")
+#View(discri)
+
+violence <- read_excel("data/violence.xlsx")
+#View(violence)
+
+womeninpolitics <- read_excel("data/womeninpolitics.xlsx")
+#View(womeninpolitics)
+```
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+library(ggplot2)
+#library(ggthemes)
+ggplot(discri,aes(x = Value, y =reorder(LOCATION,Value) , size=Value)) +
+geom_smooth(method = "lm",
+            formula = x ~ log(y),
+            se = FALSE,
+            color = "red",fill ="red") +
+geom_point(color = "red", size = 3, shape = 2) +
+theme(text = element_text(color = "gray10"),
+axis.text = element_text(face = "italic"),
+axis.title.x = element_text(vjust = -1),
+axis.title.y = element_text(vjust = 2),
+axis.ticks.y = element_blank(),
+axis.line = element_line(color = "gray40", size = 0.5),
+axis.line.y = element_line(color = "gray40", size = 0.5),
+panel.grid.major = element_line(color = "gray50", size = 0.3),
+panel.grid.major.x = element_blank())+
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"),axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))+
+labs(x="Ratio of Discrimination (%)" , y="Countries",
+  title = "        Discrimination in the Family")+
+  coord_flip()
+```
+
+---
+**Group of data separated by location in violence against women in 2019**
+
+![](img\vaw.jpeg)
+
+[Violence against Women](https://data.oecd.org/inequality/violence-against-women.htm)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+library(ggplot2)
+#library(ggplot2)
+ggplot(violence, aes(x= reorder(LOCATION,-Value),y = Value))+
+geom_col(fill="gray")+
+coord_flip()+
+theme_minimal()+
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"))+
+labs(x="Countries" , y="Violance Ratio %",
+     title="                         Violence against Women")
+```
+
+---
+
+**Data group separated by location in women in politics in 2017**
+
+![](img\win.jpeg)
+
+[Women in Politics](https://data.oecd.org/inequality/women-in-politics.htm)
+
+---
+
+class: center, middle
+
+```{r, warning= FALSE, echo=FALSE, message=FALSE, out.height='100%', out.width='60%'}
+#library(ggplot2)
+  ggplot(womeninpolitics)+
+     geom_point(mapping = aes(x = Value, y = LOCATION, size = Value),color = "black")+
+     theme_classic()+
+     labs(x="Ratio of Women in Politics" , y="Countries",
+     title="                         Women in Politics")
+```
+---
+
+class: center, middle
+![conclusion](img/conclusion.jpeg)
+# **Conclusion**
+
+---
+
+### **References**
+
+- https://www.oecd.org
+- https://www.nsf.gov
+- https://ec.europa.eu
+- https://www.ncbi.nlm.nih.gov
+- https://www.rasmussen.edu
+
+
+
+
+
